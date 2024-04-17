@@ -131,3 +131,6 @@ dist
 
 # botium output
 botiumwork/
+
+# OS Generated files
+.DS_Store

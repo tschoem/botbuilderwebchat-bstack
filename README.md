@@ -13,7 +13,7 @@ This project provides a working example of web-based chat bot tests based on the
 Install all dependencies
 
 ```
-> npm install
+> npm ci
 ```
 
 ## Step 2 - configure access to Browserstack
