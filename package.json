@@ -1,0 +1,21 @@
+{
+  "name": "botium-botbuilderwebchat-bstack",
+  "version": "0.1.0",
+  "scripts": {
+    "test": "mocha spec",
+    "test-bstack": "cross-env BOTIUM_CONFIG=botium-browserstack.json mocha spec"
+  },
+  "devDependencies": {
+    "botium-bindings": "latest",
+    "botium-connector-webdriverio": "latest",
+    "cross-env": "^7.0.0",
+    "mocha": "latest"
+  },
+  "botium": {
+    "convodirs": [
+      "spec/convo"
+    ],
+    "expandConvos": true,
+    "expandUtterancesToConvos": false
+  }
+}

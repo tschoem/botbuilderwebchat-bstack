@@ -1,0 +1,53 @@
+{
+  "botium": {
+    "Capabilities": {
+      "PROJECTNAME": "WebdriverIO Plugin Sample",
+      "CLEANUPTEMPDIR": true,
+      "CONTAINERMODE": "webdriverio",
+      "WEBDRIVERIO_URL": "https://microsoft.github.io/BotFramework-WebChat/01.getting-started/a.full-bundle/",
+      "WEBDRIVERIO_OPENBOTPAUSE": 4000,
+      "WEBDRIVERIO_INPUT_ELEMENT": "[data-id='webchat-sendbox-input']",
+      "WEBDRIVERIO_OUTPUT_ELEMENT": "//div[(contains(@class,'webchat__stacked-layout__message-row') or contains(@class,'webchat__stacked-layout__attachment-row')) and not(descendant::div[contains(@class,'webchat__bubble--from-user')])]",
+      "WEBDRIVERIO_OUTPUT_ELEMENT_BUTTONS_NESTED": false,
+      "WEBDRIVERIO_OUTPUT_ELEMENT_TEXT_NESTED": true,
+      "WEBDRIVERIO_OUTPUT_ELEMENT_TEXT": "//div[contains(@class,'webchat__bubble__content')]",
+      "WEBDRIVERIO_OUTPUT_ELEMENT_EXTRA_BUTTONS": "//div[@role='status']//button",
+      "WEBDRIVERIO_OUTPUT_ELEMENT_HASH": "TEXT",
+      "WEBDRIVERIO_SCREENSHOTS": "onbotsays",
+      "WEBDRIVERIO_OUTPUT_ELEMENT_DEBUG_HTML": true,
+      "WEBDRIVERIO_OPTIONS": {
+        "capabilities": {
+          "browserName": "Chrome",
+          "bstack:options": {
+            "browserVersion": "120.0",
+            "os": "Windows",
+            "osVersion": "10",
+            "consoleLogs": "info",
+            "networkLogs": true,
+            "projectName": "Botium tests",
+            "buildName": "BotBuilder Webchat"
+          },
+          "goog:chromeOptions": {
+            "args": [
+              "- --start-maximized"
+            ]
+          }
+        },
+        "user": "BROWSERSTACK_USERNAME",
+        "key": "BROWSERSTACK_ACCESS_KEY",
+        "hostname": "hub.browserstack.com",
+        "services": [
+          [
+            "browserstack",
+            {
+              "browserstackLocal": false,
+              "opts": {
+                "forcelocal": false
+              }
+            }
+          ]
+        ]
+      }
+    }
+  }
+}
