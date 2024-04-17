@@ -18,8 +18,8 @@ Install all dependencies
 
 ## Step 2 - configure access to Browserstack
 
-Edit _botium-browserstack.json_ and replace BROWSERSTACK*USERNAME and BROWSERSTACK_ACCESS_KEY with your credentials
-You may also edit \_botium.json* to make sure your local selenium grid is properly configured (hostname, port and protocol values)
+Edit _botium-browserstack.json_ and replace BROWSERSTACK_USERNAME and BROWSERSTACK_ACCESS_KEY with your credentials
+You may also edit _botium.json_ to make sure your local selenium grid is properly configured (hostname, port and protocol values)
 
 ## Step 3 - run your tests
 
