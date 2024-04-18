@@ -1,9 +1,10 @@
 {
   "name": "botium-botbuilderwebchat-bstack",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "scripts": {
     "test": "mocha spec",
-    "test-bstack": "cross-env BOTIUM_CONFIG=botium-browserstack.json mocha spec"
+    "test-bstack": "cross-env BOTIUM_CONFIG=botium-browserstack.json mocha spec",
+    "test-bstack:debug": "cross-env BOTIUM_CONFIG=botium-browserstack.json mocha spec --inspect --debug-brk"
   },
   "devDependencies": {
     "botium-bindings": "latest",

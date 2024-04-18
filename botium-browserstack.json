@@ -36,6 +36,9 @@
         "user": "BROWSERSTACK_USERNAME",
         "key": "BROWSERSTACK_ACCESS_KEY",
         "hostname": "hub.browserstack.com",
+        "protocol": "https",
+        "path": "/wd/hub",
+        "port": 443,
         "services": [
           [
             "browserstack",
